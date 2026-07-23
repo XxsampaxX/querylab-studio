@@ -10,8 +10,8 @@ export function Footer() {
           <div>
             <Logo size={40} />
             <p className="mt-5 max-w-sm text-[14px] leading-relaxed text-muted-foreground">
-              QueryLab is a premium digital design studio. We build landing pages, sales pages
-              and institutional websites that transform visitors into customers.
+              A QueryLab é um estúdio de design digital premium. Construímos landing pages,
+              páginas de vendas e sites institucionais que transformam visitantes em clientes.
             </p>
             <a
               href={WHATSAPP_URL}
@@ -20,31 +20,31 @@ export function Footer() {
               className="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand px-4 py-2.5 text-[13px] font-semibold text-primary-foreground transition-all hover:-translate-y-0.5 hover:bg-[color:var(--brand-2)]"
             >
               <MessageCircle className="h-4 w-4" strokeWidth={2.4} />
-              Talk on WhatsApp
+              Falar no WhatsApp
             </a>
           </div>
 
           <FooterColumn
-            title="Studio"
+            title="Estúdio"
             links={[
-              { l: "Services", h: "#services" },
-              { l: "Portfolio", h: "#portfolio" },
-              { l: "Process", h: "#process" },
-              { l: "About", h: "#why" },
+              { l: "Serviços", h: "#services" },
+              { l: "Portfólio", h: "#portfolio" },
+              { l: "Processo", h: "#process" },
+              { l: "Sobre", h: "#why" },
             ]}
           />
           <FooterColumn
-            title="Services"
+            title="Serviços"
             links={[
               { l: "Landing Pages", h: WHATSAPP_URL },
-              { l: "Institutional Sites", h: WHATSAPP_URL },
-              { l: "Sales Pages", h: WHATSAPP_URL },
+              { l: "Sites Institucionais", h: WHATSAPP_URL },
+              { l: "Páginas de Vendas", h: WHATSAPP_URL },
               { l: "Redesign", h: WHATSAPP_URL },
             ]}
           />
           <div>
             <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-              Contact
+              Contato
             </div>
             <ul className="mt-4 space-y-3 text-[14px]">
               <li>
@@ -57,16 +57,16 @@ export function Footer() {
                   {PHONE_DISPLAY}
                 </a>
               </li>
-              <li className="text-muted-foreground">Reply within a few hours</li>
+              <li className="text-muted-foreground">Resposta em poucas horas</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-3 border-t border-white/5 pt-8 text-[12px] text-muted-foreground md:flex-row md:items-center">
-          <div>© {new Date().getFullYear()} QueryLab — Premium Digital Studio</div>
+          <div>© {new Date().getFullYear()} QueryLab — Estúdio Digital Premium</div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand" />
-            Currently accepting new projects
+            Aceitando novos projetos
           </div>
         </div>
       </div>

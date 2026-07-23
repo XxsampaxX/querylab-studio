@@ -6,25 +6,25 @@ const services = [
   {
     icon: Layers,
     title: "Landing Pages",
-    desc: "Conversion-focused single pages engineered to turn traffic into qualified leads.",
+    desc: "Páginas únicas focadas em conversão, feitas para transformar tráfego em leads qualificados.",
     tag: "01",
   },
   {
     icon: Globe,
-    title: "Institutional Websites",
-    desc: "Complete brand presence — strategic narrative, refined design and reliable delivery.",
+    title: "Sites Institucionais",
+    desc: "Presença de marca completa — narrativa estratégica, design refinado e entrega confiável.",
     tag: "02",
   },
   {
     icon: ShoppingBag,
-    title: "Sales Pages",
-    desc: "Long-form pages built to sell — persuasive structure with premium execution.",
+    title: "Páginas de Vendas",
+    desc: "Páginas longas feitas para vender — estrutura persuasiva com execução premium.",
     tag: "03",
   },
   {
     icon: RefreshCw,
-    title: "Website Redesign",
-    desc: "Modernize an existing site with new design, better UX and measurable performance.",
+    title: "Redesign de Sites",
+    desc: "Modernize um site existente com novo design, melhor UX e performance mensurável.",
     tag: "04",
   },
 ];
@@ -36,15 +36,15 @@ export function Services() {
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
-              <span className="h-1 w-1 rounded-full bg-brand" /> Services
+              <span className="h-1 w-1 rounded-full bg-brand" /> Serviços
             </div>
             <h2 className="max-w-3xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Complete digital <span className="text-gradient-brand">solutions</span>
+              Soluções digitais <span className="text-gradient-brand">completas</span>
             </h2>
           </div>
           <p className="max-w-md text-[15px] leading-relaxed text-muted-foreground">
-            Four services, one obsession — building web experiences that look premium and
-            perform like a growth engine.
+            Quatro serviços, uma obsessão — construir experiências web que parecem premium e
+            funcionam como uma máquina de crescimento.
           </p>
         </div>
 
@@ -61,7 +61,6 @@ export function Services() {
               transition={{ duration: 0.55, delay: i * 0.06 }}
               className="group relative overflow-hidden rounded-3xl border-hairline bg-card p-8 transition-all duration-500 hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_30px_80px_-30px_rgba(85,227,59,0.35)]"
             >
-              {/* animated gradient border on hover */}
               <div
                 className="pointer-events-none absolute inset-0 -z-10 rounded-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                 style={{
@@ -82,7 +81,7 @@ export function Services() {
                 {s.desc}
               </p>
               <div className="mt-8 flex items-center gap-2 text-[13px] font-medium text-foreground/80 transition-colors group-hover:text-brand">
-                Start a project
+                Iniciar um projeto
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </div>
             </motion.a>

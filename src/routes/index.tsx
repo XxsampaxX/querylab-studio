@@ -9,9 +9,9 @@ import { FAQ } from "@/components/site/FAQ";
 import { FinalCTA } from "@/components/site/FinalCTA";
 import { Footer } from "@/components/site/Footer";
 
-const TITLE = "QueryLab — Landing pages that transform visitors into customers";
+const TITLE = "QueryLab — Landing pages que transformam visitantes em clientes";
 const DESCRIPTION =
-  "QueryLab is a premium digital studio building high-converting landing pages, sales pages and institutional websites for businesses that want to grow.";
+  "A QueryLab é um estúdio digital premium que cria landing pages, páginas de vendas e sites institucionais de alta conversão para empresas que querem crescer.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

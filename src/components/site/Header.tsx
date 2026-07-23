@@ -5,10 +5,10 @@ import { Logo } from "./Logo";
 import { WHATSAPP_URL } from "./constants";
 
 const NAV = [
-  { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Process", href: "#process" },
-  { label: "About", href: "#why" },
+  { label: "Serviços", href: "#services" },
+  { label: "Portfólio", href: "#portfolio" },
+  { label: "Processo", href: "#process" },
+  { label: "Sobre", href: "#why" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -62,12 +62,12 @@ export function Header() {
             className="hidden items-center gap-2 rounded-xl bg-brand px-4 py-2.5 text-[13.5px] font-semibold text-primary-foreground shadow-[0_10px_30px_-10px_rgba(85,227,59,0.55)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[color:var(--brand-2)] hover:shadow-[0_18px_50px_-10px_rgba(85,227,59,0.7)] md:inline-flex"
           >
             <MessageCircle className="h-4 w-4" strokeWidth={2.4} />
-            Talk on WhatsApp
+            Falar no WhatsApp
           </a>
           <button
             onClick={() => setOpen((v) => !v)}
             className="rounded-lg border-hairline p-2 text-foreground md:hidden"
-            aria-label="Open menu"
+            aria-label="Abrir menu"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -97,7 +97,7 @@ export function Header() {
               rel="noreferrer noopener"
               className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-brand px-4 py-3 text-sm font-semibold text-primary-foreground"
             >
-              <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
+              <MessageCircle className="h-4 w-4" /> Falar no WhatsApp
             </a>
           </nav>
         </motion.div>

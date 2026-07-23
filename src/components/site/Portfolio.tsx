@@ -5,23 +5,23 @@ import { FitnessPreview, TechPreview, BeautyPreview } from "./portfolio-previews
 
 const projects = [
   {
-    kind: "Fitness Coach",
-    title: "Kaia Method",
-    desc: "1-on-1 strength coaching — booking-first landing page with a 42% lead rate.",
+    kind: "Personal Trainer",
+    title: "Método Kaia",
+    desc: "Treino de força individual — landing page focada em agendamento com 42% de taxa de leads.",
     accent: "from-brand/40 to-blue/30",
     Preview: FitnessPreview,
   },
   {
-    kind: "Technology Company",
+    kind: "Empresa de Tecnologia",
     title: "Northbeam",
-    desc: "AI infrastructure product site with cinematic hero and deep documentation.",
+    desc: "Site de produto de infraestrutura de IA com hero cinematográfico e documentação profunda.",
     accent: "from-blue/40 to-brand/20",
     Preview: TechPreview,
   },
   {
-    kind: "Beauty Brand",
+    kind: "Marca de Beleza",
     title: "Ateliê Lumen",
-    desc: "Skincare boutique — editorial storytelling engineered for e-commerce sell-through.",
+    desc: "Boutique de skincare — storytelling editorial construído para converter em e-commerce.",
     accent: "from-[#ff8fb1]/30 to-brand/25",
     Preview: BeautyPreview,
   },
@@ -35,15 +35,15 @@ export function Portfolio() {
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
-              <span className="h-1 w-1 rounded-full bg-brand" /> Selected work
+              <span className="h-1 w-1 rounded-full bg-brand" /> Trabalhos selecionados
             </div>
             <h2 className="max-w-3xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Work that <span className="text-gradient-brand">converts</span>.
+              Projetos que <span className="text-gradient-brand">convertem</span>.
             </h2>
           </div>
           <p className="max-w-md text-[15px] leading-relaxed text-muted-foreground">
-            A curated look at recent launches — every project is designed, built and shipped
-            with the same standard of craft.
+            Um recorte dos lançamentos recentes — todo projeto é desenhado, construído e
+            entregue com o mesmo padrão de acabamento.
           </p>
         </div>
 
@@ -59,7 +59,6 @@ export function Portfolio() {
                 i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
               }`}
             >
-              {/* Preview */}
               <div className="relative overflow-hidden rounded-2xl border-hairline bg-[#0a1319]">
                 <div
                   className={`pointer-events-none absolute inset-0 -z-0 bg-gradient-to-br ${p.accent} opacity-30 blur-2xl`}
@@ -69,7 +68,6 @@ export function Portfolio() {
                 </div>
               </div>
 
-              {/* Info */}
               <div>
                 <div className="text-[11px] font-medium uppercase tracking-[0.16em] text-brand">
                   {p.kind}
@@ -82,7 +80,7 @@ export function Portfolio() {
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-2">
-                  {["Strategy", "Design", "Development", "Launch"].map((t) => (
+                  {["Estratégia", "Design", "Desenvolvimento", "Lançamento"].map((t) => (
                     <span
                       key={t}
                       className="rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium text-muted-foreground"
@@ -98,7 +96,7 @@ export function Portfolio() {
                   rel="noreferrer noopener"
                   className="mt-8 inline-flex items-center gap-2 text-[14px] font-semibold text-foreground transition-colors hover:text-brand"
                 >
-                  Request a similar project
+                  Solicitar um projeto similar
                   <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
               </div>
