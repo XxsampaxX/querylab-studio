@@ -4,23 +4,23 @@ import { Award, TrendingUp, Rocket, HeartHandshake } from "lucide-react";
 const points = [
   {
     icon: Award,
-    title: "Premium Design",
-    desc: "Editorial typography, refined spacing, considered motion. Every detail is intentional.",
+    title: "Design Premium",
+    desc: "Tipografia editorial, espaçamento refinado, motion considerado. Todo detalhe é intencional.",
   },
   {
     icon: TrendingUp,
-    title: "Conversion",
-    desc: "Structured around a single question: what makes the visitor say yes today?",
+    title: "Conversão",
+    desc: "Estruturado em torno de uma única pergunta: o que faz o visitante dizer sim hoje?",
   },
   {
     icon: Rocket,
-    title: "Fast Delivery",
-    desc: "Sharp scope, focused sprints, weekly reviews — most projects launch in 2 to 4 weeks.",
+    title: "Entrega Rápida",
+    desc: "Escopo enxuto, sprints focados, revisões semanais — a maioria dos projetos lança em 2 a 4 semanas.",
   },
   {
     icon: HeartHandshake,
-    title: "Personal Support",
-    desc: "You talk directly with the designer building your page. No account managers.",
+    title: "Atendimento Pessoal",
+    desc: "Você fala direto com quem está construindo sua página. Sem intermediários.",
   },
 ];
 
@@ -32,22 +32,22 @@ export function Why() {
         <div className="grid gap-14 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
-              <span className="h-1 w-1 rounded-full bg-brand" /> Why QueryLab
+              <span className="h-1 w-1 rounded-full bg-brand" /> Por que a QueryLab
             </div>
             <h2 className="text-balance text-4xl font-semibold leading-[1.02] tracking-tight text-foreground sm:text-5xl md:text-[64px]">
-              A studio that treats your page like a{" "}
-              <span className="text-gradient-brand">product</span>.
+              Um estúdio que trata sua página como{" "}
+              <span className="text-gradient-brand">produto</span>.
             </h2>
             <p className="mt-6 max-w-lg text-[16px] leading-relaxed text-muted-foreground">
-              We're not a marketing agency. We're a small, senior team that ships premium web
-              experiences — engineered to look expensive and behave flawlessly.
+              Não somos uma agência de marketing. Somos um time pequeno e sênior que entrega
+              experiências web premium — feitas para parecer caras e funcionar sem falhas.
             </p>
 
             <div className="mt-10 grid max-w-md grid-cols-3 gap-4">
               {[
-                { k: "98", l: "Avg. Page Score" },
-                { k: "2–4w", l: "Delivery" },
-                { k: "+312%", l: "Conversion Lift" },
+                { k: "98", l: "Nota média" },
+                { k: "2–4sem", l: "Entrega" },
+                { k: "+312%", l: "Conversão" },
               ].map((m) => (
                 <div key={m.l} className="rounded-2xl border-hairline bg-card/70 p-4">
                   <div className="font-display text-2xl font-semibold tracking-tight text-foreground">

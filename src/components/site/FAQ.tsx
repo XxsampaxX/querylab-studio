@@ -4,28 +4,28 @@ import { Plus } from "lucide-react";
 
 const faqs = [
   {
-    q: "How long does a project take?",
-    a: "Landing pages typically ship in 2 to 3 weeks. Institutional websites and sales pages usually take 3 to 5 weeks, depending on scope and content readiness.",
+    q: "Quanto tempo leva um projeto?",
+    a: "Landing pages geralmente ficam prontas em 2 a 3 semanas. Sites institucionais e páginas de vendas costumam levar de 3 a 5 semanas, dependendo do escopo e do conteúdo disponível.",
   },
   {
-    q: "How much does a QueryLab project cost?",
-    a: "Every project is scoped to your goals. After the briefing call we send a fixed proposal with clear deliverables — no hourly billing, no surprises.",
+    q: "Quanto custa um projeto da QueryLab?",
+    a: "Cada projeto é orçado com base nos seus objetivos. Após a reunião de briefing enviamos uma proposta fechada, com entregas claras — sem cobrança por hora, sem surpresas.",
   },
   {
-    q: "Do you write the copy?",
-    a: "We lead the message architecture and page structure, and can produce full copy in partnership with you. If you already have a copywriter, we integrate seamlessly.",
+    q: "Vocês escrevem o texto (copy)?",
+    a: "Conduzimos a arquitetura da mensagem e a estrutura da página, e podemos produzir o texto completo em parceria com você. Se já tem um copywriter, integramos com o processo dele.",
   },
   {
-    q: "What tech stack do you use?",
-    a: "Modern, fast and reliable: React, TypeScript, Tailwind, Framer Motion, and edge-first hosting. Every page loads in under a second and scores 95+ on Lighthouse.",
+    q: "Que tecnologias vocês usam?",
+    a: "Stack moderna, rápida e confiável: React, TypeScript, Tailwind, Framer Motion e hospedagem no edge. Toda página carrega em menos de um segundo e atinge 95+ no Lighthouse.",
   },
   {
-    q: "Do you offer ongoing support after launch?",
-    a: "Yes. We include 30 days of post-launch support on every project, plus optional retainers for continuous optimization, A/B tests and new sections.",
+    q: "Vocês oferecem suporte após o lançamento?",
+    a: "Sim. Todo projeto inclui 30 dias de suporte pós-lançamento, além de mensalidades opcionais para otimização contínua, testes A/B e novas seções.",
   },
   {
-    q: "Can you redesign my existing website?",
-    a: "Absolutely. Redesign is one of our core services — we audit what works, keep the SEO you've earned, and rebuild the experience from the ground up.",
+    q: "Vocês fazem redesign do meu site atual?",
+    a: "Sim. Redesign é um dos nossos serviços principais — auditamos o que funciona, preservamos o SEO já conquistado e reconstruímos a experiência do zero.",
   },
 ];
 
@@ -37,10 +37,10 @@ export function FAQ() {
       <div className="mx-auto max-w-4xl px-6">
         <div className="mb-14 text-center">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
-            <span className="h-1 w-1 rounded-full bg-brand" /> Questions
+            <span className="h-1 w-1 rounded-full bg-brand" /> Dúvidas
           </div>
           <h2 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Frequently <span className="text-gradient-brand">asked</span>.
+            Perguntas <span className="text-gradient-brand">frequentes</span>.
           </h2>
         </div>
 

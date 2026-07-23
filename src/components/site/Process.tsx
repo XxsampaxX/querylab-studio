@@ -4,22 +4,22 @@ const steps = [
   {
     n: "01",
     title: "Briefing",
-    desc: "We map your business, audience and goals to define what success looks like.",
+    desc: "Mapeamos o seu negócio, público e objetivos para definir como é o sucesso.",
   },
   {
     n: "02",
-    title: "Strategy",
-    desc: "Positioning, message architecture and conversion flow — before a single pixel.",
+    title: "Estratégia",
+    desc: "Posicionamento, arquitetura de mensagem e fluxo de conversão — antes de um único pixel.",
   },
   {
     n: "03",
-    title: "Design & Development",
-    desc: "Editorial design paired with production-grade code, motion and performance.",
+    title: "Design & Desenvolvimento",
+    desc: "Design editorial combinado com código de produção, motion e performance.",
   },
   {
     n: "04",
-    title: "Launch",
-    desc: "Ship fast, measure, iterate. Your page goes live optimized end-to-end.",
+    title: "Lançamento",
+    desc: "Publique rápido, meça, itere. Sua página vai ao ar otimizada de ponta a ponta.",
   },
 ];
 
@@ -30,20 +30,19 @@ export function Process() {
         <div className="mb-16 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
-              <span className="h-1 w-1 rounded-full bg-brand" /> Process
+              <span className="h-1 w-1 rounded-full bg-brand" /> Processo
             </div>
             <h2 className="max-w-3xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              A calm, deliberate <span className="text-gradient-brand">workflow</span>.
+              Um fluxo calmo e <span className="text-gradient-brand">deliberado</span>.
             </h2>
           </div>
           <p className="max-w-md text-[15px] leading-relaxed text-muted-foreground">
-            Every project follows the same four-step system — no guesswork, no delays, no
-            surprises on launch day.
+            Todo projeto segue o mesmo sistema de quatro etapas — sem achismos, sem atrasos,
+            sem surpresas no dia do lançamento.
           </p>
         </div>
 
         <div className="relative">
-          {/* connector line */}
           <div className="absolute left-0 right-0 top-6 hidden h-px overflow-hidden md:block">
             <motion.div
               initial={{ scaleX: 0 }}

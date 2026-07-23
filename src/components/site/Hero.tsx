@@ -4,9 +4,9 @@ import { WHATSAPP_URL } from "./constants";
 import { LaptopMockup } from "./LaptopMockup";
 
 const features = [
-  { icon: Target, label: "Strategic Design" },
-  { icon: Zap, label: "High Conversion" },
-  { icon: Gauge, label: "Fast Delivery" },
+  { icon: Target, label: "Design Estratégico" },
+  { icon: Zap, label: "Alta Conversão" },
+  { icon: Gauge, label: "Entrega Rápida" },
 ];
 
 export function Hero() {
@@ -29,9 +29,9 @@ export function Hero() {
             >
               <span className="flex h-6 items-center gap-1.5 rounded-full bg-brand/15 px-2.5 font-semibold text-brand">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand" />
-                New
+                Novo
               </span>
-              Premium digital design studio · Booking Q1
+              Estúdio digital premium · Vagas no 1º trimestre
             </motion.div>
 
             <motion.h1
@@ -40,8 +40,8 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.05 }}
               className="mt-6 text-balance text-[44px] font-semibold leading-[1.02] tracking-[-0.04em] text-foreground sm:text-[56px] lg:text-[68px]"
             >
-              Landing pages that{" "}
-              <span className="text-gradient-brand">transform visitors</span> into customers.
+              Landing pages que{" "}
+              <span className="text-gradient-brand">transformam visitantes</span> em clientes.
             </motion.h1>
 
             <motion.p
@@ -50,8 +50,8 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.12 }}
               className="mt-6 max-w-xl text-[17px] leading-relaxed text-muted-foreground"
             >
-              Strategic design, fast performance and conversion-focused experiences for
-              businesses that want to grow.
+              Design estratégico, performance rápida e experiências focadas em conversão para
+              empresas que querem crescer.
             </motion.p>
 
             <motion.div
@@ -67,14 +67,14 @@ export function Hero() {
                 className="group inline-flex items-center gap-2 rounded-xl bg-brand px-5 py-3.5 text-[14px] font-semibold text-primary-foreground shadow-[0_18px_50px_-14px_rgba(85,227,59,0.7)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[color:var(--brand-2)] hover:shadow-[0_24px_60px_-14px_rgba(85,227,59,0.85)]"
               >
                 <MessageCircle className="h-4 w-4" strokeWidth={2.4} />
-                Talk on WhatsApp
+                Falar no WhatsApp
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
               <a
                 href="#portfolio"
                 className="inline-flex items-center gap-2 rounded-xl border-hairline bg-white/[0.03] px-5 py-3.5 text-[14px] font-semibold text-foreground transition-all hover:bg-white/[0.06]"
               >
-                View Portfolio
+                Ver Portfólio
               </a>
             </motion.div>
 
@@ -85,10 +85,10 @@ export function Hero() {
               className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted-foreground"
             >
               <span className="inline-flex items-center gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-brand" /> Fast response
+                <span className="h-1.5 w-1.5 rounded-full bg-brand" /> Resposta rápida
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue" /> Personalized service
+                <span className="h-1.5 w-1.5 rounded-full bg-blue" /> Atendimento personalizado
               </span>
             </motion.div>
 
