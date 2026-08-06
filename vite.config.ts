@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Target Netlify static hosting instead of the default Cloudflare Workers preset.
+  nitro: {
+    preset: "netlify-static",
+  },
 });
