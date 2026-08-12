@@ -59,7 +59,7 @@ export function Portfolio() {
                 i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
               }`}
             >
-              <div className="relative overflow-hidden rounded-2xl border-hairline bg-[#0a1319]">
+              <div className="dark relative overflow-hidden rounded-2xl border-hairline bg-[#0a1319]">
                 <div
                   className={`pointer-events-none absolute inset-0 -z-0 bg-gradient-to-br ${p.accent} opacity-30 blur-2xl`}
                 />
