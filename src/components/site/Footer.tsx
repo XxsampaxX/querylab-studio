@@ -4,7 +4,7 @@ import { WHATSAPP_URL, PHONE_DISPLAY } from "./constants";
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-white/5 bg-surface">
+    <footer className="relative border-t border-foreground/5 bg-surface">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
@@ -62,7 +62,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-start justify-between gap-3 border-t border-white/5 pt-8 text-[12px] text-muted-foreground md:flex-row md:items-center">
+        <div className="mt-16 flex flex-col items-start justify-between gap-3 border-t border-foreground/5 pt-8 text-[12px] text-muted-foreground md:flex-row md:items-center">
           <div>© {new Date().getFullYear()} QueryLab — Estúdio Digital Premium</div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand" />

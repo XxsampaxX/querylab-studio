@@ -45,7 +45,43 @@
 :root {
   --radius: 0.875rem;
 
-  /* QueryLab dark palette */
+  /* QueryLab light palette (default) */
+  --background: #FBFCFC;
+  --surface: #F2F5F6;
+  --card: #FFFFFF;
+  --card-foreground: #0B1418;
+  --foreground: #0B1418;
+  --popover: #FFFFFF;
+  --popover-foreground: #0B1418;
+
+  --primary: #1FA31A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F2F5F6;
+  --secondary-foreground: #0B1418;
+  --muted: #EEF2F3;
+  --muted-foreground: #55636B;
+  --accent: #0672CC;
+  --accent-foreground: #FFFFFF;
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: #FFFFFF;
+
+  --border: rgba(11, 20, 24, 0.10);
+  --input: rgba(11, 20, 24, 0.12);
+  --ring: #1FA31A;
+
+  --brand: #1FA31A;
+  --brand-2: #13924C;
+  --blue: #0672CC;
+
+  --hairline: rgba(11, 20, 24, 0.10);
+  --grid-line: rgba(11, 20, 24, 0.05);
+  --gradient-start: #0B1418;
+  --brand-rgb: 31, 163, 26;
+  --header-bg: rgba(255, 255, 255, 0.78);
+  --header-bg-solid: rgba(255, 255, 255, 0.96);
+}
+
+.dark {
   --background: #050A0E;
   --surface: #091117;
   --card: #111B22;
@@ -72,19 +108,25 @@
   --brand: #55E33B;
   --brand-2: #18C968;
   --blue: #078CFF;
+
+  --hairline: rgba(255, 255, 255, 0.08);
+  --grid-line: rgba(255, 255, 255, 0.04);
+  --gradient-start: #F5F7F8;
+  --brand-rgb: 85, 227, 59;
+  --header-bg: rgba(9, 17, 23, 0.75);
+  --header-bg-solid: rgba(9, 17, 23, 0.95);
 }
 
-.dark {
-  --background: #050A0E;
-  --foreground: #F5F7F8;
-}
 
 @layer base {
+  html.dark { color-scheme: dark; }
+
   * {
     border-color: var(--color-border);
   }
 
   html {
+    color-scheme: light;
     background-color: var(--color-background);
     color: var(--color-foreground);
     -webkit-font-smoothing: antialiased;
@@ -107,8 +149,8 @@
   }
 
   ::selection {
-    background: color-mix(in oklab, var(--brand) 40%, transparent);
-    color: #04120A;
+    background: color-mix(in oklab, var(--brand) 30%, transparent);
+    color: var(--foreground);
   }
 }
 
@@ -119,8 +161,8 @@
 
 @utility grid-bg {
   background-image:
-    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
 }
@@ -140,17 +182,17 @@
 
 @utility glow-brand {
   box-shadow:
-    0 0 0 1px rgba(85, 227, 59, 0.25),
-    0 20px 80px -20px rgba(85, 227, 59, 0.35),
-    0 8px 30px -10px rgba(7, 140, 255, 0.25);
+    0 0 0 1px color-mix(in oklab, var(--brand) 25%, transparent),
+    0 20px 80px -20px color-mix(in oklab, var(--brand) 35%, transparent),
+    0 8px 30px -10px color-mix(in oklab, var(--blue) 25%, transparent);
 }
 
 @utility ring-brand {
-  box-shadow: 0 0 0 1px rgba(85, 227, 59, 0.35);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--brand) 35%, transparent);
 }
 
 @utility hairline {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--hairline);
 }
 
 /* Animations */
@@ -187,17 +229,17 @@
 
 /* Gradient text */
 @utility text-gradient-brand {
-  background: linear-gradient(100deg, #F5F7F8 0%, #55E33B 45%, #078CFF 100%);
+  background: linear-gradient(100deg, var(--gradient-start) 0%, var(--brand) 45%, var(--blue) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 @utility bg-radial-brand {
-  background: radial-gradient(60% 60% at 50% 0%, rgba(85, 227, 59, 0.18) 0%, transparent 60%),
-              radial-gradient(50% 50% at 80% 20%, rgba(7, 140, 255, 0.15) 0%, transparent 60%);
+  background: radial-gradient(60% 60% at 50% 0%, color-mix(in oklab, var(--brand) 16%, transparent) 0%, transparent 60%),
+              radial-gradient(50% 50% at 80% 20%, color-mix(in oklab, var(--blue) 13%, transparent) 0%, transparent 60%);
 }
 
 @utility border-hairline {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--hairline);
 }

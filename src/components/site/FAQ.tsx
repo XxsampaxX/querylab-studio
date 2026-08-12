@@ -36,7 +36,7 @@ export function FAQ() {
     <section id="faq" className="relative py-32 md:py-40">
       <div className="mx-auto max-w-4xl px-6">
         <div className="mb-14 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-foreground/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
             <span className="h-1 w-1 rounded-full bg-brand" /> Dúvidas
           </div>
           <h2 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
@@ -51,7 +51,7 @@ export function FAQ() {
               <div
                 key={f.q}
                 className={`overflow-hidden rounded-2xl border-hairline bg-card/60 transition-colors duration-300 ${
-                  isOpen ? "border-brand/25 bg-card" : "hover:border-white/15"
+                  isOpen ? "border-brand/25 bg-card" : "hover:border-foreground/15"
                 }`}
               >
                 <button
@@ -65,7 +65,7 @@ export function FAQ() {
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.3 }}
                     className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full transition-colors ${
-                      isOpen ? "bg-brand text-primary-foreground" : "bg-white/[0.04] text-foreground"
+                      isOpen ? "bg-brand text-primary-foreground" : "bg-foreground/[0.04] text-foreground"
                     }`}
                   >
                     <Plus className="h-4 w-4" strokeWidth={2.4} />

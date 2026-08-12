@@ -35,7 +35,7 @@ export function Services() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div>
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-foreground/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
               <span className="h-1 w-1 rounded-full bg-brand" /> Serviços
             </div>
             <h2 className="max-w-3xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
@@ -69,7 +69,7 @@ export function Services() {
                 }}
               />
               <div className="flex items-center justify-between">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/[0.04] text-brand ring-1 ring-white/10 transition-all duration-500 group-hover:bg-brand/12 group-hover:ring-brand/40">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-foreground/[0.04] text-brand ring-1 ring-foreground/10 transition-all duration-500 group-hover:bg-brand/12 group-hover:ring-brand/40">
                   <s.icon className="h-5 w-5" strokeWidth={2.2} />
                 </div>
                 <span className="font-mono text-xs text-muted-foreground/70">{s.tag}</span>

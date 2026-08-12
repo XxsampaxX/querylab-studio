@@ -34,7 +34,7 @@ export function Portfolio() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div>
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-foreground/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
               <span className="h-1 w-1 rounded-full bg-brand" /> Trabalhos selecionados
             </div>
             <h2 className="max-w-3xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
@@ -59,7 +59,7 @@ export function Portfolio() {
                 i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
               }`}
             >
-              <div className="relative overflow-hidden rounded-2xl border-hairline bg-[#0a1319]">
+              <div className="dark relative overflow-hidden rounded-2xl border-hairline bg-[#0a1319]">
                 <div
                   className={`pointer-events-none absolute inset-0 -z-0 bg-gradient-to-br ${p.accent} opacity-30 blur-2xl`}
                 />
@@ -83,7 +83,7 @@ export function Portfolio() {
                   {["Estratégia", "Design", "Desenvolvimento", "Lançamento"].map((t) => (
                     <span
                       key={t}
-                      className="rounded-full border-hairline bg-white/[0.03] px-3 py-1 text-[11px] font-medium text-muted-foreground"
+                      className="rounded-full border-hairline bg-foreground/[0.03] px-3 py-1 text-[11px] font-medium text-muted-foreground"
                     >
                       {t}
                     </span>

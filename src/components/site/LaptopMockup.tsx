@@ -14,7 +14,7 @@ export function LaptopMockup() {
       <div className="relative mx-auto w-full max-w-[560px]">
         {/* Screen bezel */}
         <div className="rounded-[22px] border border-white/10 bg-gradient-to-b from-[#1a252d] to-[#0b1218] p-2 shadow-[0_40px_120px_-30px_rgba(0,0,0,0.9),0_0_0_1px_rgba(255,255,255,0.05)_inset]">
-          <div className="relative overflow-hidden rounded-[14px] border border-white/10 bg-[#050A0E]">
+          <div className="dark relative overflow-hidden rounded-[14px] border border-white/10 bg-[#050A0E]">
             {/* Camera notch */}
             <div className="absolute left-1/2 top-1.5 z-10 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-white/20" />
             <DashboardUI />
