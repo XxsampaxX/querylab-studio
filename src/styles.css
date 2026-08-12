@@ -45,7 +45,43 @@
 :root {
   --radius: 0.875rem;
 
-  /* QueryLab dark palette */
+  /* QueryLab light palette (default) */
+  --background: #FBFCFC;
+  --surface: #F2F5F6;
+  --card: #FFFFFF;
+  --card-foreground: #0B1418;
+  --foreground: #0B1418;
+  --popover: #FFFFFF;
+  --popover-foreground: #0B1418;
+
+  --primary: #1FA31A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F2F5F6;
+  --secondary-foreground: #0B1418;
+  --muted: #EEF2F3;
+  --muted-foreground: #55636B;
+  --accent: #0672CC;
+  --accent-foreground: #FFFFFF;
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: #FFFFFF;
+
+  --border: rgba(11, 20, 24, 0.10);
+  --input: rgba(11, 20, 24, 0.12);
+  --ring: #1FA31A;
+
+  --brand: #1FA31A;
+  --brand-2: #13924C;
+  --blue: #0672CC;
+
+  --hairline: rgba(11, 20, 24, 0.10);
+  --grid-line: rgba(11, 20, 24, 0.05);
+  --gradient-start: #0B1418;
+  --brand-rgb: 31, 163, 26;
+  --header-bg: rgba(255, 255, 255, 0.78);
+  --header-bg-solid: rgba(255, 255, 255, 0.96);
+}
+
+.dark {
   --background: #050A0E;
   --surface: #091117;
   --card: #111B22;
@@ -72,12 +108,15 @@
   --brand: #55E33B;
   --brand-2: #18C968;
   --blue: #078CFF;
+
+  --hairline: rgba(255, 255, 255, 0.08);
+  --grid-line: rgba(255, 255, 255, 0.04);
+  --gradient-start: #F5F7F8;
+  --brand-rgb: 85, 227, 59;
+  --header-bg: rgba(9, 17, 23, 0.75);
+  --header-bg-solid: rgba(9, 17, 23, 0.95);
 }
 
-.dark {
-  --background: #050A0E;
-  --foreground: #F5F7F8;
-}
 
 @layer base {
   * {
