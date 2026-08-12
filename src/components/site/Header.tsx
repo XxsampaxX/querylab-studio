@@ -33,7 +33,7 @@ export function Header() {
       <div
         className={`mx-auto flex items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 sm:px-5 ${
           scrolled
-            ? "border-hairline bg-[rgba(9,17,23,0.75)] backdrop-blur-xl shadow-[0_10px_40px_-20px_rgba(0,0,0,0.6)]"
+            ? "border-hairline bg-[color:var(--header-bg)] backdrop-blur-xl shadow-[0_10px_40px_-20px_rgba(0,0,0,0.25)]"
             : "border border-transparent bg-transparent"
         }`}
       >

@@ -19,7 +19,7 @@ export function Logo({ className = "", size = 40 }: { className?: string; size?:
             <stop offset="1" stopColor="#55E33B" />
           </linearGradient>
         </defs>
-        <rect x="1" y="1" width="62" height="62" rx="16" fill="#091117" stroke="rgba(255,255,255,0.08)" />
+        <rect x="1" y="1" width="62" height="62" rx="16" fill="var(--surface)" stroke="var(--hairline)" />
         <circle cx="27" cy="27" r="13" fill="none" stroke="url(#ql-mark)" strokeWidth="4.5" />
         <rect
           x="35.5"
