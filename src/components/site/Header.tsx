@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { MessageCircle, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
+import { ThemeToggle } from "./ThemeToggle";
 import { WHATSAPP_URL } from "./constants";
 
 const NAV = [
@@ -55,6 +56,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <a
             href={WHATSAPP_URL}
             target="_blank"
@@ -78,7 +80,7 @@ export function Header() {
         <motion.div
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-2 rounded-2xl border-hairline bg-[rgba(9,17,23,0.95)] p-3 backdrop-blur-xl md:hidden"
+          className="mt-2 rounded-2xl border-hairline bg-[color:var(--header-bg-solid)] p-3 backdrop-blur-xl md:hidden"
         >
           <nav className="flex flex-col">
             {NAV.map((item) => (
@@ -86,7 +88,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-sm text-foreground/90 hover:bg-white/5"
+                className="rounded-lg px-3 py-3 text-sm text-foreground/90 hover:bg-foreground/5"
               >
                 {item.label}
               </a>

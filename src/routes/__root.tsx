@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "theme-color", content: "#050A0E" },
+      { name: "theme-color", content: "#FBFCFC" },
       { name: "author", content: "QueryLab" },
       { property: "og:site_name", content: "QueryLab" },
       { property: "og:type", content: "website" },
@@ -113,6 +113,12 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="pt-BR">
       <head>
         <HeadContent />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(localStorage.getItem('ql-theme')==='dark'){document.documentElement.classList.add('dark')}}catch(e){}",
+          }}
+        />
       </head>
       <body>
         {children}
