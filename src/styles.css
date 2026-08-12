@@ -119,11 +119,14 @@
 
 
 @layer base {
+  html.dark { color-scheme: dark; }
+
   * {
     border-color: var(--color-border);
   }
 
   html {
+    color-scheme: light;
     background-color: var(--color-background);
     color: var(--color-foreground);
     -webkit-font-smoothing: antialiased;
@@ -146,8 +149,8 @@
   }
 
   ::selection {
-    background: color-mix(in oklab, var(--brand) 40%, transparent);
-    color: #04120A;
+    background: color-mix(in oklab, var(--brand) 30%, transparent);
+    color: var(--foreground);
   }
 }
 
@@ -158,8 +161,8 @@
 
 @utility grid-bg {
   background-image:
-    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
 }
@@ -179,17 +182,17 @@
 
 @utility glow-brand {
   box-shadow:
-    0 0 0 1px rgba(85, 227, 59, 0.25),
-    0 20px 80px -20px rgba(85, 227, 59, 0.35),
-    0 8px 30px -10px rgba(7, 140, 255, 0.25);
+    0 0 0 1px color-mix(in oklab, var(--brand) 25%, transparent),
+    0 20px 80px -20px color-mix(in oklab, var(--brand) 35%, transparent),
+    0 8px 30px -10px color-mix(in oklab, var(--blue) 25%, transparent);
 }
 
 @utility ring-brand {
-  box-shadow: 0 0 0 1px rgba(85, 227, 59, 0.35);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--brand) 35%, transparent);
 }
 
 @utility hairline {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--hairline);
 }
 
 /* Animations */
@@ -226,17 +229,17 @@
 
 /* Gradient text */
 @utility text-gradient-brand {
-  background: linear-gradient(100deg, #F5F7F8 0%, #55E33B 45%, #078CFF 100%);
+  background: linear-gradient(100deg, var(--gradient-start) 0%, var(--brand) 45%, var(--blue) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 @utility bg-radial-brand {
-  background: radial-gradient(60% 60% at 50% 0%, rgba(85, 227, 59, 0.18) 0%, transparent 60%),
-              radial-gradient(50% 50% at 80% 20%, rgba(7, 140, 255, 0.15) 0%, transparent 60%);
+  background: radial-gradient(60% 60% at 50% 0%, color-mix(in oklab, var(--brand) 16%, transparent) 0%, transparent 60%),
+              radial-gradient(50% 50% at 80% 20%, color-mix(in oklab, var(--blue) 13%, transparent) 0%, transparent 60%);
 }
 
 @utility border-hairline {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--hairline);
 }
