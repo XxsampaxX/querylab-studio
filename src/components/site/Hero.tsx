@@ -25,7 +25,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.03] py-1.5 pl-1.5 pr-3.5 text-xs text-muted-foreground"
+              className="inline-flex items-center gap-2 rounded-full border-hairline bg-foreground/[0.03] py-1.5 pl-1.5 pr-3.5 text-xs text-muted-foreground"
             >
               <span className="flex h-6 items-center gap-1.5 rounded-full bg-brand/15 px-2.5 font-semibold text-brand">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand" />
@@ -72,7 +72,7 @@ export function Hero() {
               </a>
               <a
                 href="#portfolio"
-                className="inline-flex items-center gap-2 rounded-xl border-hairline bg-white/[0.03] px-5 py-3.5 text-[14px] font-semibold text-foreground transition-all hover:bg-white/[0.06]"
+                className="inline-flex items-center gap-2 rounded-xl border-hairline bg-foreground/[0.03] px-5 py-3.5 text-[14px] font-semibold text-foreground transition-all hover:bg-foreground/[0.06]"
               >
                 Ver Portfólio
               </a>

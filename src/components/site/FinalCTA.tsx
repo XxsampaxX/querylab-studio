@@ -18,7 +18,7 @@ export function FinalCTA() {
             transition={{ duration: 0.7 }}
             className="relative"
           >
-            <div className="inline-flex items-center gap-2 rounded-full border-hairline bg-white/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
+            <div className="inline-flex items-center gap-2 rounded-full border-hairline bg-foreground/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
               <span className="h-1 w-1 rounded-full bg-brand" /> Vamos construir
             </div>
 
@@ -46,7 +46,7 @@ export function FinalCTA() {
 
               <a
                 href={`tel:+5513996524953`}
-                className="inline-flex items-center gap-3 rounded-2xl border-hairline bg-white/[0.03] px-5 py-4 text-[15px] font-semibold text-foreground transition-all hover:bg-white/[0.06]"
+                className="inline-flex items-center gap-3 rounded-2xl border-hairline bg-foreground/[0.03] px-5 py-4 text-[15px] font-semibold text-foreground transition-all hover:bg-foreground/[0.06]"
               >
                 <Phone className="h-4 w-4 text-brand" />
                 {PHONE_DISPLAY}
