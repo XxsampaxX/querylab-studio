@@ -4,50 +4,43 @@ import { WHATSAPP_URL, PHONE_DISPLAY } from "./constants";
 
 export function FinalCTA() {
   return (
-    <section className="relative overflow-hidden py-32 md:py-40">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="relative overflow-hidden rounded-[36px] border-hairline bg-gradient-to-b from-card via-card/80 to-surface p-10 md:p-20">
-          <div className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-brand/25 blur-[120px]" />
-          <div className="pointer-events-none absolute -bottom-40 -right-20 h-96 w-96 rounded-full bg-blue/25 blur-[120px]" />
-          <div className="pointer-events-none absolute inset-0 -z-10 grid-bg opacity-40" />
-
+    <section className="relative overflow-hidden py-28 md:py-40">
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-radial-brand" />
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="border-y border-[color:var(--hairline)] py-16 md:py-24">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 14 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7 }}
-            className="relative"
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.4 }}
           >
-            <div className="inline-flex items-center gap-2 rounded-full border-hairline bg-foreground/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
-              <span className="h-1 w-1 rounded-full bg-brand" /> Vamos construir
+            <div className="eyebrow flex items-center gap-3">
+              <span className="inline-block h-px w-8 bg-[color:var(--primary)]" />
+              Vamos construir
             </div>
 
-            <h2 className="mt-6 max-w-4xl text-balance text-4xl font-semibold leading-[1.02] tracking-tight text-foreground sm:text-5xl md:text-[72px]">
-              Pronto para transformar{" "}
-              <span className="text-gradient-brand">cliques em clientes?</span>
+            <h2 className="mt-8 max-w-3xl text-balance text-[38px] font-bold leading-[1.05] tracking-[-0.035em] text-foreground sm:text-5xl md:text-[64px]">
+              Pronto para transformar <span className="text-brand">cliques em clientes?</span>
             </h2>
 
-            <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-muted-foreground">
+            <p className="mt-8 max-w-lg text-[15.5px] leading-[1.8] text-muted-foreground">
               Envie uma mensagem no WhatsApp — respondemos em poucas horas com o próximo passo
               claro.
             </p>
 
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="group inline-flex items-center gap-2 rounded-2xl bg-brand px-6 py-4 text-[15px] font-semibold text-primary-foreground shadow-[0_20px_60px_-16px_rgba(85,227,59,0.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[color:var(--brand-2)] hover:shadow-[0_28px_80px_-14px_rgba(85,227,59,0.9)]"
+                className="btn-primary group px-6 py-3.5 text-[14px]"
               >
-                <MessageCircle className="h-5 w-5" strokeWidth={2.4} />
+                <MessageCircle className="h-4 w-4" strokeWidth={2} />
                 Falar no WhatsApp
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
-              <a
-                href={`tel:+5513996524953`}
-                className="inline-flex items-center gap-3 rounded-2xl border-hairline bg-foreground/[0.03] px-5 py-4 text-[15px] font-semibold text-foreground transition-all hover:bg-foreground/[0.06]"
-              >
+              <a href="tel:+5513996524953" className="btn-ghost px-6 py-3.5 text-[14px]">
                 <Phone className="h-4 w-4 text-brand" />
                 {PHONE_DISPLAY}
               </a>
