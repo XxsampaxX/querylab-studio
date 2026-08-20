@@ -23,7 +23,7 @@ export function LaptopMockup() {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.4 }}
-        className="absolute -left-4 top-14 hidden card-surface p-3 backdrop-blur-xl sm:block"
+        className="absolute -left-10 -top-5 hidden card-surface p-3 backdrop-blur-xl sm:block"
       >
         <div className="flex items-center gap-2.5">
           <TrendingUp className="h-4 w-4 text-brand" strokeWidth={2} />
@@ -38,7 +38,7 @@ export function LaptopMockup() {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.5 }}
-        className="absolute -right-2 bottom-8 hidden card-surface p-3 backdrop-blur-xl sm:block"
+        className="absolute -right-8 -bottom-6 hidden card-surface p-3 backdrop-blur-xl sm:block"
       >
         <div className="flex items-center gap-2.5">
           <Sparkles className="h-4 w-4 text-brand" strokeWidth={2} />
