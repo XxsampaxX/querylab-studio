@@ -33,42 +33,40 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="relative py-32 md:py-40">
-      <div className="mx-auto max-w-4xl px-6">
-        <div className="mb-14 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border-hairline bg-foreground/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
-            <span className="h-1 w-1 rounded-full bg-brand" /> Dúvidas
+    <section id="faq" className="relative py-28 md:py-40">
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="border-b border-[color:var(--hairline)] pb-12">
+          <div className="eyebrow flex items-center gap-3">
+            <span className="inline-block h-px w-8 bg-[color:var(--primary)]" />
+            Dúvidas
           </div>
-          <h2 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Perguntas <span className="text-gradient-brand">frequentes</span>.
+          <h2 className="mt-6 text-balance text-[34px] font-bold leading-[1.08] tracking-[-0.03em] text-foreground sm:text-5xl">
+            Perguntas <span className="text-brand">frequentes</span>.
           </h2>
         </div>
 
-        <div className="space-y-2">
+        <div>
           {faqs.map((f, i) => {
             const isOpen = open === i;
             return (
-              <div
-                key={f.q}
-                className={`overflow-hidden rounded-2xl border-hairline bg-card/60 transition-colors duration-300 ${
-                  isOpen ? "border-brand/25 bg-card" : "hover:border-foreground/15"
-                }`}
-              >
+              <div key={f.q} className="border-b border-[color:var(--hairline)]">
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between gap-6 px-6 py-5 text-left"
+                  className="flex w-full items-center justify-between gap-8 py-6 text-left"
                 >
-                  <span className="text-[16px] font-semibold tracking-tight text-foreground md:text-[17px]">
+                  <span
+                    className={`text-[16px] font-semibold tracking-[-0.02em] transition-colors duration-200 md:text-[18px] ${
+                      isOpen ? "text-brand" : "text-foreground"
+                    }`}
+                  >
                     {f.q}
                   </span>
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full transition-colors ${
-                      isOpen ? "bg-brand text-primary-foreground" : "bg-foreground/[0.04] text-foreground"
-                    }`}
+                    transition={{ duration: 0.25 }}
+                    className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md border-hairline text-muted-foreground"
                   >
-                    <Plus className="h-4 w-4" strokeWidth={2.4} />
+                    <Plus className="h-4 w-4" strokeWidth={2} />
                   </motion.span>
                 </button>
                 <AnimatePresence initial={false}>
@@ -78,9 +76,10 @@ export function FAQ() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.35, ease: [0.2, 0.8, 0.2, 1] }}
+                      transition={{ duration: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
+                      className="overflow-hidden"
                     >
-                      <div className="px-6 pb-6 text-[14.5px] leading-relaxed text-muted-foreground">
+                      <div className="max-w-2xl pb-7 text-[14.5px] leading-[1.8] text-muted-foreground">
                         {f.a}
                       </div>
                     </motion.div>
