@@ -4,7 +4,7 @@ import { Dumbbell, Sparkles, Cpu, ArrowRight, Star, Play } from "lucide-react";
 export function FitnessPreview() {
   return (
     <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0b0f0a] text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(60%_60%_at_70%_20%,rgba(85,227,59,0.25),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(60%_60%_at_70%_20%,rgba(65,107,58,0.28),transparent_60%)]" />
       <div className="absolute inset-0 grid grid-cols-[1fr_1.1fr]">
         <div className="p-5 sm:p-7">
           <div className="flex items-center gap-1.5 text-[9px] font-semibold tracking-widest text-brand">
@@ -27,7 +27,7 @@ export function FitnessPreview() {
           <div className="mt-4 flex items-center gap-2 text-[8px] text-white/60">
             <div className="flex -space-x-1">
               {[0, 1, 2].map((i) => (
-                <div key={i} className="h-3.5 w-3.5 rounded-full border border-black bg-gradient-to-br from-brand to-blue" />
+                <div key={i} className="h-3.5 w-3.5 rounded-full border border-black bg-[color:var(--primary)]" />
               ))}
             </div>
             <span>+ 240 athletes coached</span>
@@ -55,7 +55,7 @@ export function FitnessPreview() {
                 ))}
               </div>
               <div className="mt-2 h-1 rounded-full bg-white/10">
-                <div className="h-full w-3/5 rounded-full bg-gradient-to-r from-brand to-blue" />
+                <div className="h-full w-3/5 rounded-full bg-[color:var(--primary)]" />
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export function FitnessPreview() {
 export function TechPreview() {
   return (
     <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#050a10] text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_0%,rgba(7,140,255,0.28),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_0%,rgba(65,107,58,0.22),transparent_60%)]" />
       <div className="absolute inset-x-0 top-0 flex items-center justify-between px-5 py-3">
         <div className="flex items-center gap-1.5 text-[10px] font-semibold">
           <Cpu className="h-3 w-3 text-blue" /> Northbeam
@@ -87,7 +87,7 @@ export function TechPreview() {
         </div>
         <div className="mt-2 text-[18px] font-semibold leading-[1.05] tracking-tight sm:text-[26px]">
           Infrastructure<br />
-          <span className="bg-gradient-to-r from-white via-blue to-brand bg-clip-text text-transparent">
+          <span className="text-white">
             for AI-native teams.
           </span>
         </div>
