@@ -4,7 +4,7 @@ import { WHATSAPP_URL, PHONE_DISPLAY } from "./constants";
 
 export function FinalCTA() {
   return (
-    <section className="relative overflow-hidden py-28 md:py-40">
+    <section className="relative overflow-hidden py-20 md:py-40">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-radial-brand" />
       <div className="mx-auto max-w-7xl px-6">
         <div className="border-y border-[color:var(--hairline)] py-16 md:py-24">

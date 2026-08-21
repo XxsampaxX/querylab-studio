@@ -27,7 +27,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="relative py-28 md:py-40">
+    <section id="services" className="relative py-20 md:py-40">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-8 border-b border-[color:var(--hairline)] pb-12 md:grid-cols-[1.2fr_1fr] md:items-end">
           <div>

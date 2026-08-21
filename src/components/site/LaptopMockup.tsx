@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, TrendingUp, Users, Activity, Sparkles } from "lucide-react";
+import { ScaleBox } from "./ScaleBox";
 
 export function LaptopMockup() {
   return (
@@ -9,7 +10,9 @@ export function LaptopMockup() {
         <div className="rounded-[12px] border border-[#1C291E] bg-[#0A0F0A] p-2 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)]">
           <div className="dark relative overflow-hidden rounded-[8px] border border-[#1C291E] bg-[#050705]">
             <div className="absolute left-1/2 top-1.5 z-10 h-1 w-1 -translate-x-1/2 rounded-full bg-[#1C291E]" />
-            <DashboardUI />
+            <ScaleBox base={540} ratio={540 / 380}>
+              <DashboardUI />
+            </ScaleBox>
           </div>
         </div>
         {/* Laptop base */}
@@ -55,7 +58,7 @@ export function LaptopMockup() {
 function DashboardUI() {
   const bars = [40, 62, 48, 78, 55, 88, 72, 95, 82, 100, 90];
   return (
-    <div className="grid h-[340px] grid-cols-[130px_1fr] text-foreground sm:h-[380px]">
+    <div className="grid h-[380px] grid-cols-[130px_1fr] text-foreground">
       {/* Sidebar */}
       <div className="flex flex-col gap-1 border-r border-[#1C291E] bg-[#0A0F0A] p-3">
         <div className="mb-2 flex items-center gap-2">
