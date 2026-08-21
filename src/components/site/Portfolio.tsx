@@ -58,7 +58,9 @@ export function Portfolio() {
             >
               <div className="dark relative overflow-hidden rounded-[10px] border border-[#1C291E] bg-[#050705]">
                 <div className="relative overflow-hidden transition-transform duration-500 ease-out group-hover:scale-[1.02]">
-                  <p.Preview />
+                  <ScaleBox base={640} ratio={16 / 10}>
+                    <p.Preview />
+                  </ScaleBox>
                 </div>
               </div>
 
