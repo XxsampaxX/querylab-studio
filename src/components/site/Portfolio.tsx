@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { WHATSAPP_URL } from "./constants";
 import { FitnessPreview, TechPreview, BeautyPreview } from "./portfolio-previews";
+import { ScaleBox } from "./ScaleBox";
 
 const projects = [
   {
