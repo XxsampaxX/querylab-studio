@@ -1,8 +1,10 @@
-import type { ReactNode } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
+
+const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 /**
  * Renders fixed-size mockup UIs at a proportional scale so they stay legible
- * and never clip on small screens. Uses container query units.
+ * and never clip on small screens.
  */
 export function ScaleBox({
   base = 640,
@@ -13,16 +15,30 @@ export function ScaleBox({
   ratio?: number;
   children: ReactNode;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState<number | null>(null);
+
+  useIsomorphicLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const update = () => setScale(el.clientWidth / base);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [base]);
+
   return (
     <div
+      ref={ref}
       className="w-full overflow-hidden"
-      style={{ containerType: "inline-size", aspectRatio: `${ratio}` }}
+      style={{ aspectRatio: `${ratio}`, containerType: "inline-size" }}
     >
       <div
         style={{
           width: `${base}px`,
           height: `${base / ratio}px`,
-          transform: `scale(calc(100cqw / ${base}))`,
+          transform: `scale(${scale ?? `tan(atan2(100cqw, ${base}px))`})`,
           transformOrigin: "top left",
         }}
       >
