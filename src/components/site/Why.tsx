@@ -25,7 +25,7 @@ const points = [
 
 export function Why() {
   return (
-    <section id="why" className="relative py-28 md:py-40">
+    <section id="why" className="relative py-20 md:py-40">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-16 lg:grid-cols-[1fr_1.1fr] lg:gap-24">
           <div className="lg:sticky lg:top-32 lg:self-start">

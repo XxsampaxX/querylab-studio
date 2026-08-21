@@ -33,7 +33,7 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="relative py-28 md:py-40">
+    <section id="faq" className="relative py-20 md:py-40">
       <div className="mx-auto max-w-5xl px-6">
         <div className="border-b border-[color:var(--hairline)] pb-12">
           <div className="eyebrow flex items-center gap-3">

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { WHATSAPP_URL } from "./constants";
 import { FitnessPreview, TechPreview, BeautyPreview } from "./portfolio-previews";
+import { ScaleBox } from "./ScaleBox";
 
 const projects = [
   {
@@ -26,7 +27,7 @@ const projects = [
 
 export function Portfolio() {
   return (
-    <section id="portfolio" className="relative py-28 md:py-40">
+    <section id="portfolio" className="relative py-20 md:py-40">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-8 border-b border-[color:var(--hairline)] pb-12 md:grid-cols-[1.2fr_1fr] md:items-end">
           <div>
@@ -58,7 +59,9 @@ export function Portfolio() {
             >
               <div className="dark relative overflow-hidden rounded-[10px] border border-[#1C291E] bg-[#050705]">
                 <div className="relative overflow-hidden transition-transform duration-500 ease-out group-hover:scale-[1.02]">
-                  <p.Preview />
+                  <ScaleBox base={640} ratio={16 / 10}>
+                    <p.Preview />
+                  </ScaleBox>
                 </div>
               </div>
 
